@@ -4,5 +4,8 @@ export default {
   buildModules: [
     '@nuxtjs/composition-api',
     '@nuxtjs/tailwindcss'
+  ],
+  plugins: [
+    '~/plugins/yahoo/index.ts'
   ]
 }
