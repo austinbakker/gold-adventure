@@ -19,9 +19,7 @@ export default defineComponent({
 
 
 <style lang='scss' >
- *, &::before, &::after{
-   box-sizing: border-box;
- }
+
  
 //POWERED BY AUSTIN
 </style>
