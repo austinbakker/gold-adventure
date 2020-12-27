@@ -6,6 +6,7 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxt/typescript-build'
   ],
+  transpileDependencies: ['vuex-module-decorators'],
   plugins: [
     // '~/plugins/yahoo/index.ts',
     '~/plugins/faunaDB.ts'

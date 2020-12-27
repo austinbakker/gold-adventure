@@ -9,6 +9,7 @@
 
 <script lang='ts' >
 import { defineComponent,onMounted,ref,watchEffect } from "@nuxtjs/composition-api";
+import { userModule } from "@/store";
 export default defineComponent({
  props: [],
  components: {},
@@ -20,25 +21,11 @@ export default defineComponent({
    var client = new faunadb.Client({ secret: 'fnAD-E4xlQACBxlTOnGNNS-YVID66Nz3RFM_QwUY' })
 
   onMounted(() => {
-
+    userModule.getUser()
+    // fName.value=userModule.data?.firstName || 'nope'
+    // lName.value=userModule.data?.lastName || ''
   })
 
-   watchEffect(() => {
-      client.query(
-       q.Create(
-         q.Collection('users'),
-         {
-           data: {
-            fName: fName.value,
-            lName: lName.value,
-            email: 'email goed here',
-            element: ['air', 'fire'],
-           }
-         }
-       )
-     )
-     .then((ret:string) => console.log(ret))
-   })
 
    return{
      fName,

@@ -3,6 +3,8 @@
     "target": "ES2018",
     "module": "ESNext",
     "moduleResolution": "Node",
+    "experimentalDecorators": true,
+    "importHelpers": true,
     "lib": [
       "ESNext",
       "ESNext.AsyncIterable",

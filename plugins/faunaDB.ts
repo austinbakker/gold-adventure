@@ -15,3 +15,7 @@ declare module 'vue/types/vue' {
 
 Vue.prototype.$client = client
 Vue.prototype.$q = q
+export{
+  q,
+  client
+}

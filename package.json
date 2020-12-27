@@ -14,6 +14,7 @@
     "@nuxtjs/composition-api": "^0.16.4",
     "@types/netlify-identity-widget": "^1.9.1",
     "axios": "^0.21.1",
+    "babel-plugin-transform-decorators": "^6.24.1",
     "chart.js": "^2.9.4",
     "debounce": "^1.2.0",
     "faunadb": "^4.0.0",
@@ -24,6 +25,7 @@
     "nuxt": "^2.14.7",
     "throttle-debounce": "^3.0.1",
     "tls": "0.0.1",
+    "vuex": "^3.6.0",
     "yahoo-finance": "^0.3.6"
   },
   "devDependencies": {
@@ -35,6 +37,7 @@
     "postcss": "^7.0.35",
     "sass": "^1.29.0",
     "sass-loader": "^10.1.0",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
+    "vuex-module-decorators": "^1.0.1"
   }
 }
