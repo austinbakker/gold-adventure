@@ -1,5 +1,8 @@
 <template>
  <div>
+   <div v-show="true">
+     <NetlifyIdenity />
+   </div>
    <fullScreenStockInput  v-show="showStockInput" @input="getData" />
 
     <div>
@@ -14,7 +17,7 @@
 
 <script lang='ts' >
 import fullScreenStockInput from "../components/fullScreenStockInput.vue";
-
+import NetlifyIdenity from "../components/netlify-idenity.vue";
 
 // var googleFinance = require('google-finance');
 import { defineComponent, onMounted, watch, ref } from "@nuxtjs/composition-api";
@@ -24,7 +27,7 @@ var Chart = require('chart.js');
 // import { throttle } from 'throttle-debounce';
 export default defineComponent({
  props: [],
- components: {fullScreenStockInput},
+ components: {fullScreenStockInput, NetlifyIdenity},
  setup() {
    const showStockInput = ref(true)
 
