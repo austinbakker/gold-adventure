@@ -27,7 +27,7 @@ export default defineComponent({
      return text
    })
    const submit = () => {
-     emit('input',ticker)
+     emit('input',ticker.value)
      loading.value=true
    }
    return{ ticker, loading,submit,loadingText }

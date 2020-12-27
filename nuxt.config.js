@@ -3,9 +3,11 @@ export default {
   target: 'static',
   buildModules: [
     '@nuxtjs/composition-api',
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    '@nuxt/typescript-build'
   ],
   plugins: [
-    '~/plugins/yahoo/index.ts'
+    // '~/plugins/yahoo/index.ts',
+    '~/plugins/faunaDB.ts'
   ]
 }

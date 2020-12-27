@@ -21,8 +21,8 @@ import NetlifyIdenity from "../components/netlify-idenity.vue";
 
 // var googleFinance = require('google-finance');
 import { defineComponent, onMounted, watch, ref } from "@nuxtjs/composition-api";
-import axios from "axios";
-import { debounce } from "debounce";
+import axios, { AxiosProxyConfig, AxiosRequestConfig } from "axios";
+// import { debounce } from "debounce";
 var Chart = require('chart.js');
 // import { throttle } from 'throttle-debounce';
 export default defineComponent({
@@ -31,15 +31,16 @@ export default defineComponent({
  setup() {
    const showStockInput = ref(true)
 
-   const getData = (ticker) => {
+   const getData = (ticker: string) => {
+     console.log('ticker passes',ticker)
      generateChart(ticker)
    }
 
-   const historicalData = async (ticker) => {
-    var options = {
+   const historicalData = async (ticker: string) => {
+    var options: AxiosRequestConfig = {
       method: 'GET',
       url: 'https://apidojo-yahoo-finance-v1.p.rapidapi.com/stock/v2/get-insider-roster',
-      params: {symbol: ticker, region: 'US'},
+      params: {symbol: ticker},
       headers: {
         'x-rapidapi-key': 'c43f5a015bmshc0f2aae84e4a2b8p1343fejsnb251464f7da9',
         'x-rapidapi-host': 'apidojo-yahoo-finance-v1.p.rapidapi.com'
@@ -56,14 +57,17 @@ export default defineComponent({
    }
 
   const revenueChart = ref(null)
-  const generateChart = async(ticker) => {
+  const generateChart = async(ticker: string) => {
     const stockData = await historicalData(ticker)
-
+    console.log('stockdata', stockData)
     const formatedData = [
       {label:'Institutions',data:stockData['majorHoldersBreakdown']['institutionsPercentHeld'].raw*100, color: 'rgba(255, 99, 132, 0.2)', border:'rgba(255, 99, 132, 1)'},
       {label:'Insiders',data:stockData['majorHoldersBreakdown']['insidersPercentHeld'].raw*100, color: 'rgba(54, 162, 235, 0.2)',border:'rgba(54, 162, 235, 1)'}
     ]
-    const remainingPercentage = 100-formatedData.reduce((total, item) => total.data + item.data)
+
+    const totalPercentageList = formatedData.map((item) => item.data)
+    const totalPercentage = totalPercentageList.reduce((total,num) => total+num)
+    const remainingPercentage = 100-totalPercentage
     formatedData.push({label:'outsiders', data:remainingPercentage, color: 'rgba(255, 206, 86, 0.2)',border: 'rgba(255, 206, 86, 1)',})
 
     const cfg = {
