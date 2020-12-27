@@ -9,7 +9,14 @@
     ],
     darkMode: false, // or 'media' or 'class'
     theme: {
-      extend: {},
+      extend: {
+        colors:{
+          'black': '#252a34',
+          'green': '#08d9d6',
+          'red': '#ff2e63',
+          'gray': '#eaeaea'
+        }
+      },
     },
     variants: {
       extend: {},

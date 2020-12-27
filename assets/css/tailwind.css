@@ -3,9 +3,38 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  margin:0;padding:0;
+}
+html,body {
+  scroll-behavior: auto;
+}
+
+h2{
+  /* font-size: 70px; */
+  font-size: clamp(18px, 10vw, 70px); 
+}
+h3{
+  font-size: clamp(14px, 10vw, 48px); 
+  /* font-size: 48px; */
+}
+h4{
+  font-size: clamp(12px, 2vw, 32px);;
+}
+h5{
+  font-size: clamp(10px, 2.2vw, 24px);;
+  /* font-size: 24px; */
+}
+h6{
+  font-size: clamp(10px, 1vw, 24px);;
+}
+i{
+  font-size: clamp(0.8rem, 1vw, 1.5rem);
+}
+p{
+  /* font-size: 28px; */
+  font-size: clamp(1rem, 1.2vw, 2rem);
+}
 *, *::before, *::after{
   box-sizing: border-box;
-  margin: 0;
-  padding:0;
-  /* all: unset; */
 }
