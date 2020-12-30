@@ -1,7 +1,7 @@
 <template>
     <form @submit.prevent="submit" class="absolute h-screen w-screen bg-black grid place-items-center" >
      <div  class="text-center grid grid-cols-1 gap-10" >
-      <h2 class="text-center text-white" >Enter stock</h2>
+      <h2 class="text-center text-white" >Enter xstock</h2>
       <input required class="bg-gray py-2 px-6 w-full rounded-lg" type="text" placeholder="enter ticker" v-model="ticker">
       <button  class="text-center bg-red rounded-lg py-2 px-6 text-white" >Get data</button>
       <div class="text-white" v-show="loading" >Loading {{loadingText.value}}</div>

@@ -9,6 +9,7 @@ export default {
   transpileDependencies: ['vuex-module-decorators'],
   plugins: [
     // '~/plugins/yahoo/index.ts',
-    '~/plugins/faunaDB.ts'
+    // '~/plugins/faunaDB.ts'
+    '~/plugins/firebase.ts'
   ]
 }
