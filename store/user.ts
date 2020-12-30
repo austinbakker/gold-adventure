@@ -1,5 +1,5 @@
 import { Module, VuexModule, Action, Mutation } from 'vuex-module-decorators'
-import { User } from '~/types'
+import { User } from '@/types'
 import { client,q } from "@/plugins/faunaDB";
 import { User as netiflyUser }  from "netlify-identity-widget";
 @Module({
