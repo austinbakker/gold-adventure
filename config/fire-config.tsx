@@ -1,7 +1,7 @@
 // config/fire-config.js
 import firebase from 'firebase/app'
 import 'firebase/firestore';
-
+import 'firebase/auth'
 
 const firebaseConfig = {
   apiKey: "AIzaSyA_c6gz7ClFcflepZLfqGe3v5VycpwyAi0",
@@ -16,15 +16,15 @@ const firebaseConfig = {
 console.log('hosting item ', process.env)
 try {
   firebase.initializeApp(firebaseConfig);
+  if (process.env.NODE_ENV === "development") {
+    console.log("firestore connected to development");
+    firebase.firestore().useEmulator("localhost", 8080);
+  }
 } catch(err){
   if (!/already exists/.test(err.message)) {
     console.error('Firebase initialization error', err.stack)}
 }
-if (process.env.NODE_ENV === "development") {
-  console.log("firestore connected to development");
-  firebase.firestore().useEmulator("localhost", 8080);
-}
+
 
 const fire = firebase
-
 export default fire
