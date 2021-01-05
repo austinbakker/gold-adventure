@@ -1,0 +1,124 @@
+[debug] [2021-01-05T18:54:53.111Z] ----------------------------------------------------------------------
+[debug] [2021-01-05T18:54:53.112Z] Command:       /usr/local/bin/firebase /Users/austinbakker/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase emulators:start
+[debug] [2021-01-05T18:54:53.113Z] CLI Version:   9.1.0
+[debug] [2021-01-05T18:54:53.113Z] Platform:      darwin
+[debug] [2021-01-05T18:54:53.113Z] Node Version:  v12.18.1
+[debug] [2021-01-05T18:54:53.114Z] Time:          Tue Jan 05 2021 19:54:53 GMT+0100 (Central European Standard Time)
+[debug] [2021-01-05T18:54:53.114Z] ----------------------------------------------------------------------
+[debug] [2021-01-05T18:54:53.114Z] 
+[debug] [2021-01-05T18:54:53.120Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-05T18:54:53.120Z] > authorizing via signed-in user
+[info] i  emulators: Starting emulators: auth, functions, firestore, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore, hosting"}}
+[debug] [2021-01-05T18:54:53.133Z] [hub] writing locator at /var/folders/zj/k81n5dk90pq1z690q0489p4c0000gn/T/hub-golden-adventure.json
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: database, pubsub {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mdatabase, pubsub\u001b[22m"}}
+[info] ✔  functions: Using node@12 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@12 from host."}}
+[debug] [2021-01-05T18:54:53.152Z] defaultcredentials: writing to file /Users/austinbakker/.config/firebase/austin_austinbakker_com_application_default_credentials.json
+[debug] [2021-01-05T18:54:53.154Z] Setting GAC to /Users/austinbakker/.config/firebase/austin_austinbakker_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/austinbakker/.config/firebase/austin_austinbakker_com_application_default_credentials.json"}}
+[debug] [2021-01-05T18:54:53.162Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2021-01-05T18:54:53.162Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2021-01-05T18:54:53.162Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/Users/austinbakker/.cache/firebase/emulators/cloud-firestore-emulator-v1.11.11.jar","--host","localhost","--port",8080,"--rules","/Users/austinbakker/Documents/GitHub/gold-adventure/firestore.rules","--functions_emulator","localhost:5001"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/Users/austinbakker/.cache/firebase/emulators/cloud-firestore-emulator-v1.11.11.jar\",\"--host\",\"localhost\",\"--port\",8080,\"--rules\",\"/Users/austinbakker/Documents/GitHub/gold-adventure/firestore.rules\",\"--functions_emulator\",\"localhost:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"functions_emulator\",\"seed_from_export\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2021-01-05T18:54:59.115Z] API endpoint: http://localhost: {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://localhost:"}}
+[debug] [2021-01-05T18:54:59.116Z] 8080
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=localhost:8080
+
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"8080\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n\n   export FIRESTORE_EMULATOR_HOST=localhost:8080\n\nDev App Server is now running.\n\n"}}
+[debug] [2021-01-05T18:55:01.244Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/golden-adventure/webApps/-/config  
+ 
+[debug] [2021-01-05T18:55:02.097Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 05 Jan 2021 18:55:02 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting: Serving hosting files from: public {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mpublic\u001b[22m"}}
+[info] ✔  hosting: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[debug] [2021-01-05T18:55:02.404Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2021-01-05T18:55:02.404Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2021-01-05T18:55:02.404Z] Starting Emulator UI with command {"binary":"node","args":["/Users/austinbakker/.cache/firebase/emulators/ui-v1.4.1/server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/austinbakker/.cache/firebase/emulators/ui-v1.4.1/server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2021-01-05T18:55:02.565Z] Web / API server started at http://localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at http://localhost:4000\n"}}
+[info] i  functions: Watching "/Users/austinbakker/Documents/GitHub/gold-adventure/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/austinbakker/Documents/GitHub/gold-adventure/functions\" for Cloud Functions..."}}
+[debug] [2021-01-05T18:55:02.675Z] [worker-pool] addWorker(~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(~diagnostic~)"}}
+[debug] [2021-01-05T18:55:02.675Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key ~diagnostic~, total=1"}}
+[debug] [2021-01-05T18:55:02.676Z] [worker-pool] submitWork(triggerId=) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=)"}}
+[debug] [2021-01-05T18:55:02.676Z] [worker-~diagnostic~-869fb7a0-89fb-4d49-afa0-2bf07df4f96d]: Assigning socketPath: /var/folders/zj/k81n5dk90pq1z690q0489p4c0000gn/T/fire_emu_6413.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-869fb7a0-89fb-4d49-afa0-2bf07df4f96d]: Assigning socketPath: /var/folders/zj/k81n5dk90pq1z690q0489p4c0000gn/T/fire_emu_6413.sock"}}
+[debug] [2021-01-05T18:55:02.676Z] [worker-~diagnostic~-869fb7a0-89fb-4d49-afa0-2bf07df4f96d]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-869fb7a0-89fb-4d49-afa0-2bf07df4f96d]: BUSY"}}
+[debug] [2021-01-05T18:55:02.861Z] [runtime-status] [6413] Functions runtime initialized. {"cwd":"/Users/austinbakker/Documents/GitHub/gold-adventure/functions","node_version":"12.18.1"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [6413] Functions runtime initialized. {\"cwd\":\"/Users/austinbakker/Documents/GitHub/gold-adventure/functions\",\"node_version\":\"12.18.1\"}"}}
+[debug] [2021-01-05T18:55:02.862Z] [runtime-status] [6413] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [6413] Disabled runtime features: undefined"}}
+[debug] [2021-01-05T18:55:02.865Z] [runtime-status] [6413] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.2","resolution":"/Users/austinbakker/Documents/GitHub/gold-adventure/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [6413] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.4.2\",\"resolution\":\"/Users/austinbakker/Documents/GitHub/gold-adventure/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2021-01-05T18:55:02.866Z] [runtime-status] [6413] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.0","resolution":"/Users/austinbakker/Documents/GitHub/gold-adventure/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [6413] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.13.0\",\"resolution\":\"/Users/austinbakker/Documents/GitHub/gold-adventure/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2021-01-05T18:55:02.867Z] [runtime-status] [6413] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.0","resolution":"/Users/austinbakker/Documents/GitHub/gold-adventure/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [6413] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.13.0\",\"resolution\":\"/Users/austinbakker/Documents/GitHub/gold-adventure/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2021-01-05T18:55:02.868Z] [runtime-status] [6413] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [6413] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2021-01-05T18:55:02.868Z] [runtime-status] [6413] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.0","resolution":"/Users/austinbakker/Documents/GitHub/gold-adventure/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [6413] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.13.0\",\"resolution\":\"/Users/austinbakker/Documents/GitHub/gold-adventure/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2021-01-05T18:55:02.941Z] [runtime-status] [6413] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [6413] Checked functions.config() {\"config\":{}}"}}
+[debug] [2021-01-05T18:55:02.941Z] [runtime-status] [6413] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.13.0","resolution":"/Users/austinbakker/Documents/GitHub/gold-adventure/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [6413] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.13.0\",\"resolution\":\"/Users/austinbakker/Documents/GitHub/gold-adventure/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2021-01-05T18:55:02.941Z] [runtime-status] [6413] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.0","resolution":"/Users/austinbakker/Documents/GitHub/gold-adventure/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [6413] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.13.0\",\"resolution\":\"/Users/austinbakker/Documents/GitHub/gold-adventure/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2021-01-05T18:55:02.942Z] [runtime-status] [6413] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.4.2","resolution":"/Users/austinbakker/Documents/GitHub/gold-adventure/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [6413] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"9.4.2\",\"resolution\":\"/Users/austinbakker/Documents/GitHub/gold-adventure/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2021-01-05T18:55:02.943Z] [runtime-status] [6413] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.13.0","resolution":"/Users/austinbakker/Documents/GitHub/gold-adventure/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [6413] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.13.0\",\"resolution\":\"/Users/austinbakker/Documents/GitHub/gold-adventure/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2021-01-05T18:55:02.943Z] [runtime-status] [6413] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.4.2","resolution":"/Users/austinbakker/Documents/GitHub/gold-adventure/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"message":"[runtime-status] [6413] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"9.4.2\",\"resolution\":\"/Users/austinbakker/Documents/GitHub/gold-adventure/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬─────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Authentication │ localhost:9099 │ http://localhost:4000/auth      │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Functions      │ localhost:5001 │ http://localhost:4000/functions │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Firestore      │ localhost:8080 │ http://localhost:4000/firestore │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Hosting        │ localhost:5000 │ n/a                             │
+└────────────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2021-01-05T18:55:02.950Z] [worker-~diagnostic~-869fb7a0-89fb-4d49-afa0-2bf07df4f96d]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-869fb7a0-89fb-4d49-afa0-2bf07df4f96d]: IDLE"}}
+[debug] [2021-01-05T18:55:33.390Z] Jan 05, 2021 7:55:33 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jan 05, 2021 7:55:33 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2021-01-05T18:55:33.412Z] Jan 05, 2021 7:55:33 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jan 05, 2021 7:55:33 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2021-01-05T18:55:33.496Z] Jan 05, 2021 7:55:33 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jan 05, 2021 7:55:33 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[debug] [2021-01-05T19:01:43.372Z] Jan 05, 2021 8:01:43 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jan 05, 2021 8:01:43 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2021-01-05T19:01:43.380Z] Jan 05, 2021 8:01:43 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jan 05, 2021 8:01:43 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2021-01-05T19:25:04.992Z] Jan 05, 2021 8:25:04 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jan 05, 2021 8:25:04 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2021-01-05T19:25:04.999Z] Jan 05, 2021 8:25:04 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jan 05, 2021 8:25:04 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2021-01-05T19:29:11.847Z] Jan 05, 2021 8:29:11 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jan 05, 2021 8:29:11 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
+[debug] [2021-01-05T19:29:30.998Z] Jan 05, 2021 8:29:30 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jan 05, 2021 8:29:30 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2021-01-05T19:29:31.007Z] Jan 05, 2021 8:29:31 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jan 05, 2021 8:29:31 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2021-01-05T19:29:31.067Z] Jan 05, 2021 8:29:31 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jan 05, 2021 8:29:31 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2021-01-05T19:29:31.196Z] Jan 05, 2021 8:29:31 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jan 05, 2021 8:29:31 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2021-01-05T19:29:31.265Z] Jan 05, 2021 8:29:31 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jan 05, 2021 8:29:31 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2021-01-05T19:29:34.552Z] Jan 05, 2021 8:29:34 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Jan 05, 2021 8:29:34 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
