@@ -10,6 +10,6 @@ export default {
   plugins: [
     // '~/plugins/yahoo/index.ts',
     // '~/plugins/faunaDB.ts'
-    '~/plugins/firebase.ts'
-  ]
+    '~/plugins/firebase.ts' 
+  ],
 }

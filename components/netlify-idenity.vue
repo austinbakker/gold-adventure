@@ -19,7 +19,7 @@
 import { defineComponent, onMounted } from "@nuxtjs/composition-api";
 import * as netlifyIdentity from "netlify-identity-widget";
 // import { client,q } from "~/plugins/faunaDB.ts";
-import {userModule} from "@/store";
+// import {userModule} from "@/store";
 import { auth, firebase } from "@/plugins/firebase";
 import * as firebaseui from "firebaseui";
 import 'firebaseui/dist/firebaseui.css'
@@ -31,9 +31,9 @@ export default defineComponent({
 
 
   onMounted(() => {
-    var ui = new firebaseui.auth.AuthUI(firebase.auth());
+    var ui = new firebaseui.auth.AuthUI(auth);
     ui.start('#firebaseui-auth-container', {
-      signInSuccessUrl: 'login/success',
+      signInSuccessUrl: '/',
       signInOptions: [
         firebase.auth.EmailAuthProvider.PROVIDER_ID,
         firebase.auth.GoogleAuthProvider.PROVIDER_ID,

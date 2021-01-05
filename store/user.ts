@@ -12,27 +12,13 @@ export default class myUser extends VuexModule {
   data: User | null = null
 
   @Mutation
-  setUser(user: User ){
+  setUserData(user: User ){
     this.data = user
   }
 
   @Action
-  getUser(user?:netiflyUser){
-    var id;
-    if(user) id=user.id
-    else if (this.data) id=this.data.id
-    else throw 'Login failed, no user id was given'
-
-    client.query(
-      q.Get(
-        q.Match(q.Index('user_by_id'),id)
-      )
-    )
-    .then((response:any) => {
-      const userData:User = response.data
-      if(userData) {this.setUser(userData);return;}
-      throw `login error, ${response}`
-    })
+  setUser(user:User){
+    console.log(user)
     
   }
 }
